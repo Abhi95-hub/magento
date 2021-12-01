@@ -1,0 +1,28 @@
+{
+  "name": "citi/module-paybyspring",
+  "description": "Official Magento2 Plugin to integrate with Spring By Citi Payments",
+  "type": "magento2-module",
+  "license": "Apache-2.0",
+  "version": "v1.0.0",
+  "require": {
+    "magento/framework": "^104.0.0|^103.0.0|^102.0.0"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Citi\\PayBySpring\\": ""
+    }
+  },
+  "repositories": {
+    "magento": {
+      "type": "composer",
+      "url": "https://repo.magento.com/"
+    },
+    "spring": {
+      "type": "vcs",
+      "url": "ssh://git@cedt-icg-bitbucketcli.nam.nsroot.net:7999/c2b/magento-spring-172848.git"
+    }
+  }
+}
